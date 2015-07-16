@@ -1,0 +1,50 @@
+#home .ui-controlgroup {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+#home img {
+  width: 100%;
+  max-width: 375px;
+  display: block;
+  margin: 0 auto;
+}
+
+#home, #blog, #photos, #videos, #tweets, #videoList, #videoplayer {
+  background: url('../images/background_viewsource.png')
+}
+
+li.ui-li-has-thumb img {
+  margin: 10px;
+}
+
+iframe {
+  width: 100%;
+}
+
+#videoList h3 {
+  margin: 15px 0 5px 0;
+  height: 40px;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#videoList img {
+  display: block;
+  width: 90%;
+}
+
+#videoplayer .ui-content {
+  margin: 0;
+  padding: 0;
+}
+
+#videoplayer iframe {
+  width: 100%;
+  min-height: 50%;
+}
+
+#videoplayer h3, #myplayer p {
+  padding: 0 5%;
+}

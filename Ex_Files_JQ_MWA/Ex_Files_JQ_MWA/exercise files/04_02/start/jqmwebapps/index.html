@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Mobile Web Apps</title>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquerymobile.js"></script>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/jquerymobile.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <section data-role="page" id="home">
+   <article data-role="content">
+      <img src="images/viewsourcelogo.png" alt="View Source Logo">
+
+      <div data-role="controlgroup">
+        <a href="#blog" class="ui-btn ui-icon-edit ui-btn-icon-left
+            ui-corner-all ui-btn-b">Blog</a>
+        <a href="#" class="ui-btn ui-icon-video ui-btn-icon-left
+            ui-corner-all ui-btn-b">Videos</a>
+        <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-left
+            ui-corner-all ui-btn-b">Photos</a>
+        <a href="#" class="ui-btn ui-icon-comment ui-btn-icon-left
+            ui-corner-all ui-btn-b">Tweets</a>
+      </div>
+   </article><!-- content -->
+  </section><!-- home -->
+
+
+  <!-- page: blog -->
+  <section id="blog" class="header_default footer_default" data-role="page" data-title="Blog">
+    <div data-role="content" id="postlist"></div><!-- content -->
+  </section><!-- blog page -->
+  
+  <!-- page: blogposts -->
+  <section class="header_default footer_default" data-title="Posts" data-role="page" id="blogpost">
+    <div data-role="content">
+      <div id="mypost"></div>
+    </div><!-- content -->
+  </section><!-- blogposts page -->
+
+  <section id="videos" class="header_default footer_default" data-role="page" data-title="Videos">
+    <div data-role="content">
+      <div class="ui-grid-a" id="videoList"></div>
+    </div><!-- content -->
+  </section><!-- videos page -->
+
+  <section id="videoplayer" class="header_default footer_default" data-role="page" data-title="Player">
+    <div data-role="content">
+      <div id="myplayer"></div>
+    </div><!-- content -->
+  </section><!-- videoplayer page -->
+
+<script src="js/script.js"></script>
+<script src="http://iviewsource.com/category/codingtutorials/?json=1&count=10&callback=listPosts"></script>
+</body>
+</html>
