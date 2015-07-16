@@ -23,9 +23,9 @@
 				<img src="images/viewsourcelogo.png" alt="View Soucre Logo" />
 				<div data-theme="b" data-role="controlgroup">
 					<a class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left" href="#blog">Blog</a>
-					<a class="ui-btn ui-corner-all ui-shadow ui-icon-video ui-btn-icon-left" href="#">Videos</a>
-					<a class="ui-btn ui-corner-all ui-shadow ui-icon-camera ui-btn-icon-left" href="#">Photos</a>
-					<a class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left" href="#">Tweets</a>
+					<a class="ui-btn ui-corner-all ui-shadow ui-icon-video ui-btn-icon-left" href="#videos">Videos</a>
+					<a class="ui-btn ui-corner-all ui-shadow ui-icon-camera ui-btn-icon-left" href="#photos">Photos</a>
+					<a class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left" href="<span id="tweets"></span>">Tweets</a>
 				</div>
 			</article>
 			<!-- footer -->
@@ -55,6 +55,34 @@
 				<div id="mypost"></div>
 			</article>
 		</section>
+		
+		<!-- video -->
+		<section data-role="page" class="header_default footer_default" id="videos" data-title="Videos">
+			<!-- content -->
+			<article data-role="content">
+				<div class="ui-grid-a" id="videoList"></div>
+			</article>
+		</section>
+		
+		<!-- video player -->
+		<section data-role="page" class="header_default footer_default" id="videoPlayer" data-title="Player">
+			<!-- content -->
+			<article data-role="content">
+				<div id="myPlayer"></div>
+			</article>
+		</section>
+		
+		<!-- photos -->
+		<section data-role="page" class="header_default footer_default" id="photos" data-title="Photo Grid">
+			<!-- content -->
+			<article data-role="content">
+				// ui-grid-c creates container for 4 grids
+				<div id="photoList" class="ui-grid-c">
+					
+					
+				</div>
+			</article>
+		</section>
 
 		<!-- info -->
 		<section data-role="page" class="header_default footer_default" id="info">
@@ -66,5 +94,6 @@
 		</section>
 		<script src="js/script.js"></script>
 		<!-- <script src="{url of word press + /?json=1&count=10} &callback=listPosts(the function I created in script.js)"></script> -->
+		<!-- <script src="{url of youtube json feed} &callback=listVideos(the function I created in script.js)"></script> -->
 	</body>
 </html>

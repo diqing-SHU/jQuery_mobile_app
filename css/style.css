@@ -11,6 +11,39 @@
 	margin:0 auto;
 }
 
-#home {
+#home, #blog, #photos, #videos, #tweets, #videoList, #videoPlayer {
 	background: url("../images/background_viewsource.png");
+}
+li.ul-li-has-thumb img {
+	margin: 10px;
+}
+
+iframe {
+	width: 100%;
+}
+
+#videoList h3{
+	margin: 15px 0 5px 0;
+	height: 40px;
+	overflow: hidden;
+	font-size: 1em;
+}
+
+#videoList img {
+	display: block;
+	width: 90%;
+}
+
+#videoPlayer .ui-content {
+	margin:0;
+	padding:0;
+}
+
+#videoPlayer iframe {
+	width: 100%;
+	min-height:50%;
+}
+
+#videoPlayer h3, #myplayer p {
+	padding: 0 5%;
 }
