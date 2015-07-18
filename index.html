@@ -25,7 +25,8 @@
 					<a class="ui-btn ui-corner-all ui-shadow ui-icon-edit ui-btn-icon-left" href="#blog">Blog</a>
 					<a class="ui-btn ui-corner-all ui-shadow ui-icon-video ui-btn-icon-left" href="#videos">Videos</a>
 					<a class="ui-btn ui-corner-all ui-shadow ui-icon-camera ui-btn-icon-left" href="#photos">Photos</a>
-					<a class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left" href="<span id="tweets"></span>">Tweets</a>
+					<a class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left" href="#tweets">Tweets</a>
+					<a class="ui-btn ui-corner-all ui-shadow ui-icon-comment ui-btn-icon-left" href="#currency">Currency</a>
 				</div>
 			</article>
 			<!-- footer -->
@@ -57,20 +58,18 @@
 		</section>
 		
 		<!-- video -->
-		<section data-role="page" class="header_default footer_default" id="videos" data-title="Videos">
-			<!-- content -->
+		<!-- <section data-role="page" class="header_default footer_default" id="videos" data-title="Videos">
 			<article data-role="content">
 				<div class="ui-grid-a" id="videoList"></div>
 			</article>
-		</section>
+		</section>  -->
 		
 		<!-- video player -->
-		<section data-role="page" class="header_default footer_default" id="videoPlayer" data-title="Player">
-			<!-- content -->
+		<!-- <section data-role="page" class="header_default footer_default" id="videoPlayer" data-title="Player">
 			<article data-role="content">
 				<div id="myPlayer"></div>
 			</article>
-		</section>
+		</section>  -->
 		
 		<!-- photos -->
 		<section data-role="page" class="header_default footer_default" id="photos" data-title="Photo Grid">
@@ -84,6 +83,60 @@
 			</article>
 		</section>
 
+		<!-- currency -->
+		<section data-role="page" class="header_default footer_default" id="currency" data-title="Currency">
+			<!-- content -->
+			<article data-role="content">
+				<ul id="currencyList" data-role="listview">
+					<li><a href="#currencyDetail">more options for search</a></li>
+				</ul>
+			</article>
+		</section>
+		
+		<!-- currencyDetail -->
+		<section data-role="page" class="header_default footer_default" id="currencyDetail" data-title="Detail">
+			<!-- content -->
+			<article data-role="content">
+				<div id="currencyDetailForm">
+					<form>
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<label for="base">Base:</label>
+							<select name="base" id="base">
+								<option value="" selected></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+							<label for="">Time:</label>
+							<select>
+								<option value="" selected>now</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+							<label for="">To:</label>
+							<select>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</fieldset>
+					</form>
+					<form>
+						<input type="text" name=""/>
+						<input type="submit" value="Submit"/>
+					</form>
+				</div>
+			</article>
+		</section>
+
 		<!-- info -->
 		<section data-role="page" class="header_default footer_default" id="info">
 			<!-- content -->
@@ -93,6 +146,7 @@
 			</article>
 		</section>
 		<script src="js/script.js"></script>
+		<script src="https://api.fixer.io/latest?base=CNY&callback=listCurrency"></script>
 		<!-- <script src="{url of word press + /?json=1&count=10} &callback=listPosts(the function I created in script.js)"></script> -->
 		<!-- <script src="{url of youtube json feed} &callback=listVideos(the function I created in script.js)"></script> -->
 	</body>
